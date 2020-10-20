@@ -485,18 +485,19 @@ button {
 	/*-----------*/
 
 	.dishes-2__img img {
-	width: 100%;
-}
-/*---------------*/
+		width: 100%;
+	}
+	/*---------------*/
 
-	.footer__wrapper {}
+
 	.footer__wrapper {
 		flex-direction: column;
+		flex-flow: column-reverse;
 		padding: 35px 0;
 	}
 	.menu-footer {
 		justify-content: space-around;
-		margin: 40px 0 0 0;
+		margin: 0;
 	}
 	.menu-footer__title {
 		margin: 0 0 23px 0;
@@ -514,86 +515,86 @@ button {
 }
 
 @media (max-width: 800px) {
-		/*burger*/
-		   #body.lock {
-	overflow: hidden;
-   }
-	  .header__menu {
-    position: fixed;
-    z-index: 2;
-    top: 0;
-   	left: -100%;
-    width: 100%;
-    height: 100%;
-    display: block;
-    background: #343434;
-  }
-  .header__burger {
-    display: block;
-    position: relative;
-    z-index: 5;
-    width: 30px;
-    height: 20px;
-    margin: 30px 20px 0 0; 
-  }
-  .header__burger span {
-    background: #fff;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    top: 9px;  
-    transition: 0.3s;
-  }
-  .header__burger:before,
-  .header__burger:after {
-    content: '';
-    background: #fff;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0;
-    transition: 0.3s;
-  }
-  .header__burger:before {
-    top: 0;
-  }
-  .header__burger:after {
-    bottom: 0;
-  }
-  .header__burger.active:before {
-    transform: rotate(45deg);
-    top: 9px;
-  }
-  .header__burger.active:after {
-    transform: rotate(-45deg);
-    bottom: 9px;
-  }
-  .header__burger.active span{
-    transform: scale(0);
-  }
-  .header__menu.active {
-    left: 0;
-      overflow: scroll;
-  }
-  .header__list {
-  display: block;
-  text-align: center;
+	/*burger*/
+	#body.lock {
+		overflow: hidden;
+	}
+	.header__menu {
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		display: block;
+		background: #343434;
+	}
+	.header__burger {
+		display: block;
+		position: relative;
+		z-index: 5;
+		width: 30px;
+		height: 20px;
+		margin: 30px 20px 0 0; 
+	}
+	.header__burger span {
+		background: #fff;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		top: 9px;  
+		transition: 0.3s;
+	}
+	.header__burger:before,
+	.header__burger:after {
+		content: '';
+		background: #fff;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: 0.3s;
+	}
+	.header__burger:before {
+		top: 0;
+	}
+	.header__burger:after {
+		bottom: 0;
+	}
+	.header__burger.active:before {
+		transform: rotate(45deg);
+		top: 9px;
+	}
+	.header__burger.active:after {
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+	.header__burger.active span{
+		transform: scale(0);
+	}
+	.header__menu.active {
+		left: 0;
+		overflow: scroll;
+	}
+	.header__list {
+		display: block;
+		text-align: center;
 
-}
-.header__list li {
-  margin: 40px 0 0 0;
-}
-.header__link {
-  font-size: 35px;
-  margin: 0;
-} 
-.header__wrapper {
+	}
+	.header__list li {
+		margin: 40px 0 0 0;
+	}
+	.header__link {
+		font-size: 35px;
+		margin: 0;
+	} 
+	.header__wrapper {
 
-}
-.header__search {
-	display: none;
-}
-/*burger end*/
+	}
+	.header__search {
+		display: none;
+	}
+	/*burger end*/
 
 }
 
@@ -603,14 +604,14 @@ button {
 		height: auto;
 	}
 	.intro__logo {
-	    padding: 80px 0 50px 0;
-}
+		padding: 80px 0 50px 0;
+	}
 	.intro__wrapper {
 		margin: 0 0 0 20px;
 	}
 	.intro__title {
 		font-size: 60px;
-		    margin: 0 0 50px 0;
+		margin: 0 0 50px 0;
 	}
 	.intro__text {
 		font-size: 19px;
@@ -634,7 +635,7 @@ button {
 	.dishes__subtext {
 		margin: 36px auto 60px;
 	}
-		.item-dishes {
+	.item-dishes {
 		margin-bottom: 90px;
 	}
 	.item-dishes__text {
@@ -647,14 +648,14 @@ button {
 		margin: 0 0 36px 0;
 	}
 	.dishes__butn a {
-		    font-size: 23px;
-		        padding: 20px 40px;
+		font-size: 23px;
+		padding: 20px 40px;
 	}
 
-		/*---------------------*/
+	/*---------------------*/
 	.info__title {
-		    font-size: 40px;
-		        padding: 36px 0 0 0;
+		font-size: 40px;
+		padding: 36px 0 0 0;
 	}	
 	.info__inner {
 		display: block;
@@ -662,7 +663,7 @@ button {
 	}
 	.info__item {
 		margin: 0 0 50px 0;
-		     padding: 0; 
+		padding: 0; 
 	}
 	.info__item:last-child {
 		margin: 0 ;
@@ -675,16 +676,16 @@ button {
 
 	/*---------------------*/
 	.discount__item {
-		    padding: 0 0px 20px 0;
+		padding: 0 0px 20px 0;
 	}
 	.discount__title {
 		font-size: 40px;
 	}
 
-		.discount__subtext {
-			font-size: 19px;
-			    margin: 20px 0 25px 0;
-		}
+	.discount__subtext {
+		font-size: 19px;
+		margin: 20px 0 25px 0;
+	}
 	.discount__butn a {
 		font-size: 19px;
 		padding: 20px 40px;
@@ -692,7 +693,7 @@ button {
 	}	
 	
 	.discount__img img {
-    width: 100%;
+		width: 100%;
 	}
 
 
@@ -703,20 +704,20 @@ button {
 	}
 	.dishes-2__title {
 		font-size: 40px;
-		    padding: 36px 0 54px 0;
+		padding: 36px 0 54px 0;
 	}
-.dishes-2__subtext {
-	font-size: 19px;
-}
+	.dishes-2__subtext {
+		font-size: 19px;
+	}
 	.dishes-2__img {
-	text-align: right;
-	margin: 120px 0 0 0; 
-}
+		text-align: right;
+		margin: 120px 0 0 0; 
+	}
 
-/*-----------------*/
+	/*-----------------*/
 	.about {
-    	margin: 36px 0 36px 0;
-}	
+		margin: 36px 0 36px 0;
+	}	
 
 	.about__column {
 		display: block;
@@ -741,10 +742,10 @@ button {
 		font-size: 19px;
 	}
 	.subscribe__form {
-		    padding-bottom: 70px;
+		padding-bottom: 70px;
 	}
 	.subscribe__input input {
-		   padding: 15px 20px;
+		padding: 15px 20px;
 	}
 	.subscribe__butn button {
 		width: 100%;
@@ -760,10 +761,16 @@ button {
 		display: block;
 		text-align: center;
 	}
+	.menu-footer__title {
+		margin: 0 0 15px 0;
+	}
 	.contacts__text {
 		font-size: 19px;
 		width: 100%;
 		margin: 0 ;
+	}
+	.menu-footer__item {
+		margin: 0 0 50px 0;
 	}
 	.menu-footer__link {
 		font-size: 19px;
