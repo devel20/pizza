@@ -71,6 +71,9 @@ button {
 .header__list {
 	display: flex;	
 }
+.header__list li {
+	flex: 1 0 auto;
+}
 .header__link {
 	color: #fff;
 	font-size: 17px;
@@ -86,11 +89,22 @@ button {
 	width: 185px;
 	height: 50px;
 	border-radius: 25px;
+	padding: 0 50px 0 20px;
+	margin-left: 20px;
+	transition: 0.3s;
 }
-.header__form button {
+.header__form input:hover, 
+.header__form input:focus {
+	width: 240px;
+}
+
+.header__form img {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
 	position: absolute;
-	top: 32%;
-	right: 20px;
+	top: 9px;
+	right: 15px;
 }
 
 /*Intro--------------------------------*/
@@ -475,7 +489,8 @@ button {
 }
 
 /****************************************************************************
-****************************************************************************/
+****************************************************************************
+*****************************************************************************/
 
 
 @media (max-width: 1168px) {
@@ -517,6 +532,9 @@ button {
 	.footer__contacts {
 		text-align: center;
 		padding: 0 10px;
+	}
+	.contacts__title {
+		margin-top: 20px;
 	}
 	.contacts__text {
 		width: 80%;
