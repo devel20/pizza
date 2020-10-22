@@ -35,9 +35,20 @@ body {
 	margin: 0 auto;
 	position: relative;
 }
-
 button {
 	line-height: 1;
+}
+ .scroll-top {
+    background: url("../images/arrow-top.svg") no-repeat top left;
+    height: 60px;
+    width: 60px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+    opacity: 0.5;
 }
 .header {
 	padding: 0 20px;
@@ -528,6 +539,7 @@ button {
 		height: 100%;
 		display: block;
 		background: #343434;
+		transition: 0.3s;
 	}
 	.header__burger {
 		display: block;
